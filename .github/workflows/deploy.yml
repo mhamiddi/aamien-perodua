@@ -17,4 +17,4 @@ jobs:
         with:
           apiToken: ${{ secrets.CF_API_TOKEN }}
           accountId: ${{ secrets.CF_ACCOUNT_ID }}
-          command: pages deploy --project-name rezuwan-perodua --branch master .
+          command: pages deploy --project-name aamien-perodua --branch master .
