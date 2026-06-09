@@ -329,39 +329,39 @@ function switchTab(tab) {
 
 // ============ LOAN CALCULATOR ============
 const MODELS = [
-  {id:'axia',name:'AXIA',priceFrom:38340,priceTo:49240,
+  {id:'axia',name:'AXIA',priceFrom:39937,priceTo:51136,
     img:'https://www.perodua.com.my/assets/images/landing-page/cars/with-emblem/axia.webp',
     variants:[
-      {name:'1.0L G (D-CVT)',price:38340},{name:'1.0L X (D-CVT)',price:39740},
-      {name:'1.0L SE (D-CVT)',price:43740},{name:'1.0L AV (D-CVT)',price:49240}]},
-  {id:'bezza',name:'BEZZA',priceFrom:34320,priceTo:49670,
+      {name:'1.0L G (D-CVT)',price:39937},{name:'1.0L X (D-CVT)',price:41375},
+      {name:'1.0L SE (D-CVT)',price:45485},{name:'1.0L AV (D-CVT)',price:51136}]},
+  {id:'bezza',name:'BEZZA',priceFrom:35917,priceTo:51720,
     img:'https://www.perodua.com.my/assets/images/landing-page/cars/with-emblem/bezza.webp',
     variants:[
-      {name:'1.0 G (Manual)',price:34320},{name:'1.0 G (Automatic)',price:36320},
-      {name:'1.3 X (Automatic)',price:43670},{name:'1.3 AV (Automatic)',price:49670}]},
-  {id:'myvi',name:'MYVI',priceFrom:46190,priceTo:59570,
+      {name:'1.0 G (Manual)',price:35917},{name:'1.0 G (Automatic)',price:37972},
+      {name:'1.3 X (Automatic)',price:45624},{name:'1.3 AV (Automatic)',price:51720}]},
+  {id:'myvi',name:'MYVI',priceFrom:48100,priceTo:61910,
     img:'https://www.perodua.com.my/assets/images/landing-page/cars/with-emblem/myvi.webp',
     variants:[
-      {name:'1.3L G (Without PSDA, D-CVT)',price:46190},{name:'1.3L G (D-CVT)',price:48190},
-      {name:'1.5L X (D-CVT)',price:50570},{name:'1.5L H (D-CVT)',price:54570},{name:'1.5L AV (D-CVT)',price:59570}]},
-  {id:'alza',name:'ALZA',priceFrom:62170,priceTo:75170,
+      {name:'1.3L G (Without PSDA, D-CVT)',price:48100},{name:'1.3L G (D-CVT)',price:50160},
+      {name:'1.5L X (D-CVT)',price:52660},{name:'1.5L H (D-CVT)',price:56770},{name:'1.5L AV (D-CVT)',price:61910}]},
+  {id:'alza',name:'ALZA',priceFrom:64515,priceTo:77874,
     img:'https://www.perodua.com.my/assets/images/landing-page/cars/with-emblem/alza.webp',
     variants:[
-      {name:'1.5L X (D-CVT)',price:62170},{name:'1.5L H (D-CVT)',price:67670},{name:'1.5L AV (D-CVT)',price:75170}]},
-  {id:'ativa',name:'ATIVA',priceFrom:62240,priceTo:73140,
+      {name:'1.5L X (D-CVT)',price:64515},{name:'1.5L H (D-CVT)',price:70181},{name:'1.5L AV (D-CVT)',price:77874}]},
+  {id:'ativa',name:'ATIVA',priceFrom:64600,priceTo:75826,
     img:'https://www.perodua.com.my/assets/images/landing-page/cars/with-emblem/ativa.webp',
     variants:[
-      {name:'1.0L Turbo X (Metallic)',price:62240},{name:'1.0L Turbo H (Metallic)',price:67040},
-      {name:'1.0L Turbo H (Special Metallic)',price:67540},{name:'1.0L Turbo AV (Metallic)',price:72340},
-      {name:'1.0L Turbo AV (Special Metallic)',price:72840},{name:'1.0L Turbo AV (2-Tone)',price:73140}]},
-  {id:'aruz',name:'ARUZ',priceFrom:72540,priceTo:77540,
+      {name:'1.0L Turbo X (Metallic)',price:64600},{name:'1.0L Turbo H (Metallic)',price:69526},
+      {name:'1.0L Turbo H (Special Metallic)',price:70026},{name:'1.0L Turbo AV (Metallic)',price:75000},
+      {name:'1.0L Turbo AV (Special Metallic)',price:75526},{name:'1.0L Turbo AV (2-Tone)',price:75826}]},
+  {id:'aruz',name:'ARUZ',priceFrom:75402,priceTo:80504,
     img:'https://www.perodua.com.my/assets/images/landing-page/cars/with-emblem/aruz.webp',
     variants:[
-      {name:'1.5 X (Automatic)',price:72540},{name:'1.5 AV (Automatic)',price:77540}]},
-  {id:'traz',name:'TRAZ',priceFrom:75780,priceTo:81680,
+      {name:'1.5 X (Automatic)',price:75402},{name:'1.5 AV (Automatic)',price:80504}]},
+  {id:'traz',name:'TRAZ',priceFrom:78501,priceTo:84570,
     img:'https://www.perodua.com.my/assets/car/traz/info_box/traz_info_kv_d_2x.webp',
     variants:[
-      {name:'1.5 X (D-CVT)',price:75780},{name:'1.5 H (D-CVT)',price:80780},{name:'1.5 H 2T (2-Tone)',price:81680}]}
+      {name:'1.5 X (D-CVT)',price:78501},{name:'1.5 H (D-CVT)',price:83640},{name:'1.5 H 2T (2-Tone)',price:84570}]}
 ];
 
 let selectedModel = null;
@@ -511,40 +511,40 @@ function resetModel() {
 // ============ ELIGIBILITY CHECKER ============
 const ELIG_MODELS = [
   {id:'axia',name:'AXIA',tagline:'PRETTY. SMART.',category:'Compact Hatchback',
-    priceFrom:38340,priceTo:49240,
+    priceFrom:39937,priceTo:51136,
     image:'https://www.perodua.com.my/assets/images/landing-page/cars/with-emblem/axia.webp',
     thumb:'https://www.perodua.com.my/assets/images/header_menu/perodua-axia.webp',
-    variants:[{name:'1.0L G (D-CVT)',price:38340},{name:'1.0L X (D-CVT)',price:39740},{name:'1.0L SE (D-CVT)',price:43740},{name:'1.0L AV (D-CVT)',price:49240}]},
+    variants:[{name:'1.0L G (D-CVT)',price:39937},{name:'1.0L X (D-CVT)',price:41375},{name:'1.0L SE (D-CVT)',price:45485},{name:'1.0L AV (D-CVT)',price:51136}]},
   {id:'bezza',name:'BEZZA',tagline:'BEYOND COMPACT',category:'Compact Sedan',
-    priceFrom:34320,priceTo:49670,
+    priceFrom:35917,priceTo:51720,
     image:'https://www.perodua.com.my/assets/images/landing-page/cars/with-emblem/bezza.webp',
     thumb:'https://www.perodua.com.my/assets/images/header_menu/perodua-bezza.webp',
-    variants:[{name:'1.0 G (Manual)',price:34320},{name:'1.0 G (Automatic)',price:36320},{name:'1.3 X (Automatic)',price:43670},{name:'1.3 AV (Automatic)',price:49670}]},
+    variants:[{name:'1.0 G (Manual)',price:35917},{name:'1.0 G (Automatic)',price:37972},{name:'1.3 X (Automatic)',price:45624},{name:'1.3 AV (Automatic)',price:51720}]},
   {id:'myvi',name:'MYVI',tagline:'THE NEXT STANDARD',category:'Hatchback',
-    priceFrom:46190,priceTo:59570,
+    priceFrom:48100,priceTo:61910,
     image:'https://www.perodua.com.my/assets/images/landing-page/cars/with-emblem/myvi.webp',
     thumb:'https://www.perodua.com.my/assets/images/header_menu/perodua-myvi.webp',
-    variants:[{name:'1.3L G (Without PSDA, D-CVT)',price:46190},{name:'1.3L G (D-CVT)',price:48190},{name:'1.5L X (D-CVT)',price:50570},{name:'1.5L H (D-CVT)',price:54570},{name:'1.5L AV (D-CVT)',price:59570}]},
+    variants:[{name:'1.3L G (Without PSDA, D-CVT)',price:48100},{name:'1.3L G (D-CVT)',price:50160},{name:'1.5L X (D-CVT)',price:52660},{name:'1.5L H (D-CVT)',price:56770},{name:'1.5L AV (D-CVT)',price:61910}]},
   {id:'alza',name:'ALZA',tagline:'VERSATILITY REINVENTED',category:'MPV 7-Seater',
-    priceFrom:62170,priceTo:75170,
+    priceFrom:64515,priceTo:77874,
     image:'https://www.perodua.com.my/assets/images/landing-page/cars/with-emblem/alza.webp',
     thumb:'https://www.perodua.com.my/assets/images/header_menu/perodua-alza.webp',
-    variants:[{name:'1.5L X (D-CVT)',price:62170},{name:'1.5L H (D-CVT)',price:67670},{name:'1.5L AV (D-CVT)',price:75170}]},
+    variants:[{name:'1.5L X (D-CVT)',price:64515},{name:'1.5L H (D-CVT)',price:70181},{name:'1.5L AV (D-CVT)',price:77874}]},
   {id:'ativa',name:'ATIVA',tagline:'ACTIVATE EVERY DESTINATION',category:'SUV 5-Seater',
-    priceFrom:62240,priceTo:73140,
+    priceFrom:64600,priceTo:75826,
     image:'https://www.perodua.com.my/assets/images/landing-page/cars/with-emblem/ativa.webp',
     thumb:'https://www.perodua.com.my/assets/images/header_menu/perodua-ativa.webp',
-    variants:[{name:'1.0L Turbo X (Metallic)',price:62240},{name:'1.0L Turbo H (Metallic)',price:67040},{name:'1.0L Turbo H (Special Metallic)',price:67540},{name:'1.0L Turbo AV (Metallic)',price:72340},{name:'1.0L Turbo AV (Special Metallic)',price:72840},{name:'1.0L Turbo AV (2-Tone)',price:73140}]},
+    variants:[{name:'1.0L Turbo X (Metallic)',price:64600},{name:'1.0L Turbo H (Metallic)',price:69526},{name:'1.0L Turbo H (Special Metallic)',price:70026},{name:'1.0L Turbo AV (Metallic)',price:75000},{name:'1.0L Turbo AV (Special Metallic)',price:75526},{name:'1.0L Turbo AV (2-Tone)',price:75826}]},
   {id:'aruz',name:'ARUZ',tagline:'ELEVATE YOUR LIFE',category:'SUV 7-Seater',
-    priceFrom:72540,priceTo:77540,
+    priceFrom:75402,priceTo:80504,
     image:'https://www.perodua.com.my/assets/images/landing-page/cars/with-emblem/aruz.webp',
     thumb:'https://www.perodua.com.my/assets/images/header_menu/perodua-aruz.webp',
-    variants:[{name:'1.5 X (Automatic)',price:72540},{name:'1.5 AV (Automatic)',price:77540}]},
+    variants:[{name:'1.5 X (Automatic)',price:75402},{name:'1.5 AV (Automatic)',price:80504}]},
   {id:'traz',name:'TRAZ',tagline:'SUV Baharu',category:'SUV 5-Seater',
-    priceFrom:75780,priceTo:81680,
+    priceFrom:78501,priceTo:84570,
     image:'https://www.perodua.com.my/assets/car/traz/info_box/traz_info_kv_d_2x.webp',
     thumb:'https://www.perodua.com.my/assets/images/header_menu/traz_navigation_menu_red_2x.webp',
-    variants:[{name:'1.5 X (D-CVT)',price:75780},{name:'1.5 H (D-CVT)',price:80780},{name:'1.5 H 2T (2-Tone)',price:81680}]}
+    variants:[{name:'1.5 X (D-CVT)',price:78501},{name:'1.5 H (D-CVT)',price:83640},{name:'1.5 H 2T (2-Tone)',price:84570}]}
 ];
 
 const INTEREST_RATE = 3.0;
